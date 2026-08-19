@@ -1,0 +1,13 @@
+{
+  "document_type": "COMMERCIAL INVOICE",
+  "invoice_number": "INV-2042-01",
+  "shipment_id": "SHP-2042",
+  "seller_name": "Gulf Components Ltd",
+  "buyer_name": "Acme Logistics LLC",
+  "origin": "Hamburg, Germany",
+  "destination": "Doha, Qatar",
+  "currency": "USD",
+  "total_amount": "24000.00",
+  "quantity": "120",
+  "issue_date": "2026-08-19"
+}

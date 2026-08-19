@@ -1,0 +1,12 @@
+{
+  "name": "realitylatch",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/app.mjs",
+    "test": "node --test",
+    "proof:case-a": "node scripts/replay-case-a.mjs"
+  },
+  "engines": {"node": ">=20"}
+}

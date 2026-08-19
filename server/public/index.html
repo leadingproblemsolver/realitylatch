@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RealityLatch</title>
+<style>body{font-family:system-ui,sans-serif;max-width:980px;margin:40px auto;padding:0 20px;background:#fafafa;color:#171717}.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:18px;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}button{padding:10px 14px;border:0;border-radius:8px;background:#111;color:#fff;cursor:pointer}pre{white-space:pre-wrap;background:#111;color:#eee;padding:14px;border-radius:8px;overflow:auto}@media(max-width:760px){.grid{grid-template-columns:1fr}}</style></head>
+<body><h1>RealityLatch</h1><p>Evidence → reconciliation gate → explicit operational state.</p>
+<div class="card"><h2>Replay Nutrient Studio JSON</h2><div class="grid"><label>Invoice<input id="invoice" type="file" accept=".json,application/json"></label><label>Shipping<input id="shipping" type="file" accept=".json,application/json"></label><label>Certificate<input id="certificate" type="file" accept=".json,application/json"></label></div><p><button onclick="evaluateJson()">Evaluate case</button></p><pre id="result">No run yet.</pre></div>
+<div class="card"><h2>Nutrient server connection</h2><p>The API key stays server-side.</p><p><button onclick="health()">Check deployment</button></p><pre id="health">Not checked.</pre></div>
+<script>
+async function readJson(id){const f=document.getElementById(id).files[0];if(!f)throw new Error(`Missing ${id} file`);return JSON.parse(await f.text())}
+async function evaluateJson(){try{const body={case_id:"runtime-case",invoice:await readJson("invoice"),shipping_document:await readJson("shipping"),certificate:await readJson("certificate")};const r=await fetch("/api/evaluate-studio-json",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)});document.getElementById("result").textContent=JSON.stringify(await r.json(),null,2)}catch(e){document.getElementById("result").textContent=e.message}}
+async function health(){const r=await fetch("/health");document.getElementById("health").textContent=JSON.stringify(await r.json(),null,2)}
+</script></body></html>

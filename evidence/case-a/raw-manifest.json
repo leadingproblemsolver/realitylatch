@@ -1,0 +1,18 @@
+{
+  "case_id": "RL-CASE-A",
+  "source": "Nutrient Studio/dashboard export",
+  "files": {
+    "invoice": {
+      "path": "evidence/case-a/raw/invoice.fields.json",
+      "sha256": "426e64eb89b6ae08473e5e47152d3959ff5499f2dfd554144168b0112e243b72"
+    },
+    "shipping_document": {
+      "path": "evidence/case-a/raw/shipping_document.fields.json",
+      "sha256": "1f9e7a62eb392cd36d19beddefc28d11ad4403f0f3a354928bc1af399ed22284"
+    },
+    "certificate": {
+      "path": "evidence/case-a/raw/certificate.fields.json",
+      "sha256": "aa6cdc3d1c230b2b4548c25031bb63de298a0b705297cd8579eb3736438fd294"
+    }
+  }
+}

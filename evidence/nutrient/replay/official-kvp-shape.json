@@ -1,0 +1,33 @@
+{
+  "pages": [
+    {
+      "pageIndex": 0,
+      "keyValuePairs": [
+        {
+          "confidence": 95.4,
+          "key": {
+            "bbox": { "left": 10, "top": 20, "width": 100, "height": 18 },
+            "content": "Shipment ID"
+          },
+          "value": {
+            "bbox": { "left": 120, "top": 20, "width": 100, "height": 18 },
+            "content": "SHP-2042",
+            "dataType": "String"
+          }
+        },
+        {
+          "confidence": 99,
+          "key": {
+            "bbox": { "left": 10, "top": 48, "width": 100, "height": 18 },
+            "content": "Quantity"
+          },
+          "value": {
+            "bbox": { "left": 120, "top": 48, "width": 100, "height": 18 },
+            "content": "120",
+            "dataType": "Number"
+          }
+        }
+      ]
+    }
+  ]
+}

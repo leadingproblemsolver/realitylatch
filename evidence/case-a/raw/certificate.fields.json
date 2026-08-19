@@ -1,0 +1,13 @@
+{
+  "document_type": "CERTIFICATE OF CONFORMITY",
+  "invoice_number": null,
+  "shipment_id": "SHP-2042",
+  "seller_name": "EuroCert Inspection Services",
+  "buyer_name": "Acme Logistics LLC",
+  "origin": "Germany",
+  "destination": null,
+  "currency": null,
+  "total_amount": null,
+  "quantity": "120",
+  "issue_date": "2026-08-18"
+}

@@ -1,0 +1,95 @@
+{
+  "caseId": "RL-MISMATCH-001",
+  "claims": [
+    {
+      "documentType": "invoice",
+      "field": "shipment_id",
+      "value": "SHP-2042",
+      "confidence": 0.99,
+      "source": {
+        "document": "invoice.pdf",
+        "page": 1
+      }
+    },
+    {
+      "documentType": "invoice",
+      "field": "quantity",
+      "value": 120,
+      "confidence": 0.99,
+      "source": {
+        "document": "invoice.pdf",
+        "page": 1
+      }
+    },
+    {
+      "documentType": "shipping_document",
+      "field": "shipment_id",
+      "value": "SHP-2042",
+      "confidence": 0.98,
+      "source": {
+        "document": "shipping-document.pdf",
+        "page": 1
+      }
+    },
+    {
+      "documentType": "shipping_document",
+      "field": "quantity",
+      "value": 102,
+      "confidence": 0.98,
+      "source": {
+        "document": "shipping-document.pdf",
+        "page": 1
+      }
+    },
+    {
+      "documentType": "certificate",
+      "field": "shipment_id",
+      "value": "SHP-2042",
+      "confidence": 0.97,
+      "source": {
+        "document": "certificate.pdf",
+        "page": 1
+      }
+    },
+    {
+      "documentType": "certificate",
+      "field": "quantity",
+      "value": 120,
+      "confidence": 0.97,
+      "source": {
+        "document": "certificate.pdf",
+        "page": 1
+      }
+    },
+    {
+      "documentType": "certificate",
+      "field": "buyer_name",
+      "value": "Acme Logistics LLC",
+      "confidence": 0.97,
+      "source": {
+        "document": "certificate.pdf",
+        "page": 1
+      }
+    },
+    {
+      "documentType": "invoice",
+      "field": "buyer_name",
+      "value": "Acme Logistics LLC",
+      "confidence": 0.98,
+      "source": {
+        "document": "invoice.pdf",
+        "page": 1
+      }
+    },
+    {
+      "documentType": "shipping_document",
+      "field": "buyer_name",
+      "value": "Acme Logistics LLC",
+      "confidence": 0.98,
+      "source": {
+        "document": "shipping_document.pdf",
+        "page": 1
+      }
+    }
+  ]
+}

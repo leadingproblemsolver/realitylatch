@@ -1,0 +1,13 @@
+{
+  "document_type": "SHIPPING DOCUMENT / BILL OF LADING",
+  "invoice_number": null,
+  "shipment_id": "SHP-2042",
+  "seller_name": "NorthSea Freight GmbH",
+  "buyer_name": "Acme Logistics LLC",
+  "origin": "Hamburg, Germany",
+  "destination": "Doha, Qatar",
+  "currency": null,
+  "total_amount": null,
+  "quantity": "120",
+  "issue_date": "2026-08-20"
+}

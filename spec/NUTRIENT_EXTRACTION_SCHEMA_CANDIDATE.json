@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TradeDocumentCandidate",
+  "description": "PROVISIONAL. Human must approve material fields and semantics before this becomes an acceptance contract.",
+  "type": "object",
+  "properties": {
+    "document_type": {
+      "type": "string",
+      "enum": ["invoice", "shipping_document", "certificate", "unknown"]
+    },
+    "shipment_id": { "type": ["string", "null"] },
+    "quantity": { "type": ["number", "null"] }
+  },
+  "required": ["document_type", "shipment_id", "quantity"],
+  "additionalProperties": true
+}
