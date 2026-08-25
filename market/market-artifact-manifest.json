@@ -1,0 +1,27 @@
+{
+  "repo": "leadingproblemsolver/realitylatch",
+  "artifact_id": "realitylatch-logistics-evidence-permission-gate",
+  "artifact_url": "https://github.com/leadingproblemsolver/realitylatch",
+  "system": "RealityLatch",
+  "wedge": "evidence-to-permission control plane for cross-document logistics facts",
+  "target_roles": [
+    "Head of Operations",
+    "Control Tower Lead",
+    "Head of Digital Transformation",
+    "Supply Chain Systems Lead"
+  ],
+  "pain_signals": [
+    "fragmented document evidence is promoted into operational state without explicit reconciliation",
+    "material contradictions or missing shipment evidence can be silently normalized away",
+    "operators need provenance-preserving claims before consequential release or handoff"
+  ],
+  "proof_refs": [
+    "README.md — v0.2 public proof state and evidence flow",
+    "evidence/case-a/derived/receipt.json",
+    "evidence/case-a/raw/",
+    "control/CROSS_DOCUMENT_GATE.md",
+    "npm test — documented 19/19 verification on 2026-08-19",
+    "npm run proof:case-a"
+  ],
+  "desired_consequence": "one logistics or supply-chain operator provides a real cross-document exception or contradiction case, reviews the RealityLatch reconciliation outcome, and confirms, corrects, or rejects the permission boundary"
+}
