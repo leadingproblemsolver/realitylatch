@@ -1,0 +1,9 @@
+name: Security Baseline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  semgrep:
+    uses: leadingproblemsolver/signalops-workbench/.github/workflows/reusable-semgrep-baseline.yml@feat/clay-market-distribution-router-2026-08-25
