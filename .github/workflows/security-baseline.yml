@@ -6,4 +6,4 @@ on:
 
 jobs:
   semgrep:
-    uses: leadingproblemsolver/signalops-workbench/.github/workflows/reusable-semgrep-baseline.yml@feat/clay-market-distribution-router-2026-08-25
+    uses: leadingproblemsolver/signalops-workbench/.github/workflows/reusable-semgrep-baseline.yml@b26c13df77df1067a056682d5fb1b27adbd686d4
